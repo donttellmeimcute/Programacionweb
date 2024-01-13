@@ -1,83 +1,98 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hendrik Hallel Rodriguez Plancarte - Biografia</title>
-    <style>
-        body {
-            font-family: 'Roboto', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #fafafa;
-            color: #333;
-        }
-        img {
-            border-radius: 50%;
-        }
-        header {
-            background-color: #2196F3;
-            color: #fff;
-            text-align: center;
-            padding: 1em 0;
-        }
-        h1{
-          color: white;
-        }
-        h2, h3 {
-            color: #2196F3;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hendrik Hallel Rodriguez Plancarte - Biografia</title>
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fafafa;
+      color: #333;
+      overflow-x: hidden; /* Prevents horizontal scroll */
+    }
+    img {
+      border-radius: 50%;
+      animation: appear 2s ease-in-out 1;
+    }
+    header {
+      background-color: #2196F3;
+      color: #fff;
+      text-align: center;
+      padding: 1em 0;
+    }
+    h1{
+      color: white;
+    }
+    h2, h3, li {
+      color: #2196F3;
+      animation: slide-in 2s ease-in-out 1;
+    }
 
-        section {
-            padding: 10px;
-        }
+    section {
+      padding: 10px;
+    }
 
-        h2 {
-            border-bottom: 4px solid #2196F3;
-            padding-bottom: 5px;
-        }
+    h2 {
+      border-bottom: 4px solid #2196F3;
+      padding-bottom: 5px;
+    }
 
-        p {
-            margin: 10px 0;
-            color: gray;
-        }
+    p {
+      margin: 10px 0;
+      color: gray;
+      animation: slide-in 2s ease-in-out 1;
+    }
 
-        a {
-            color: #2196F3;
-            text-decoration: none;
-        }
+    a {
+      color: #2196F3;
+      text-decoration: none;
+      animation: slide-in 2s ease-in-out 1;
+    }
 
-        a:hover {
-            text-decoration: underline;
-        }
-    </style>
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* Animation */
+    @keyframes slide-in {
+      0% {
+        transform: translateX(-100%);
+        opacity: 0;
+      }
+      100% {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes appear {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Hendrik Hallel Rodriguez Plancarte</h1>
-    </header>
-<section>
-      <h2>Listas</h2>
-      <h2>Lista ordenada</h2>
-      <ol>
-        <li>uno</li>
-        <li>dos</li>
-        <li>tres</li>
-      </ol>
-    </section>
-    <section>
-      <h2>Lista desordenada</h2>
-      <ul>
-        <li>uno</li>
-        <li>dos</li>
-        <li>tres</li>
-      </ul>
-      <a href="../index.html">Regresar</a>
-    </section>
-  <section>
-    <div>
-    <img src="../imagenes/1.jpg" alt="Angel" width="150" height="200">
-    </div>
-  </section>
+    <!-- Lista ordenada -->
+    <h2>Lista Ordenada</h2>
+    <ol>
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+    </ol>
+
+    <!-- Lista desordenada -->
+    <h2>Lista Desordenada</h2>
+    <ul>
+        <li>Elemento A</li>
+        <li>Elemento B</li>
+        <li>Elemento C</li>
+    </ul>
 </body>
 </html>

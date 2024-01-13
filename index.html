@@ -11,25 +11,30 @@
             padding: 0;
             background-color: #fafafa;
             color: #333;
+            overflow-x: hidden; /* Prevents horizontal scroll */
         }
         img {
             border-radius: 50%;
+            animation: slideInFromLeft 2s ease-in-out;
         }
         header {
             background-color: #2196F3;
             color: #fff;
             text-align: center;
             padding: 1em 0;
+            animation: slideInFromLeft 2s ease-in-out;
         }
         h1{
           color: white;
         }
         h2, h3 {
             color: #2196F3;
+            animation: slideInFromLeft 2s ease-in-out;
         }
 
         section {
             padding: 10px;
+            animation: slideInFromLeft 2s ease-in-out;
         }
 
         h2 {
@@ -40,15 +45,29 @@
         p {
             margin: 10px 0;
             color: gray;
+            animation: slideInFromLeft 2s ease-in-out;
         }
 
         a {
             color: #2196F3;
             text-decoration: none;
+            animation: slideInFromLeft 2s ease-in-out;
         }
 
         a:hover {
             text-decoration: underline;
+        }
+
+        /* Animation */
+        @keyframes slideInFromLeft {
+          0% {
+            transform: translateX(-100%);
+            opacity: 0;
+          }
+          100% {
+            transform: translateX(0);
+            opacity: 1;
+          }
         }
     </style>
 </head>

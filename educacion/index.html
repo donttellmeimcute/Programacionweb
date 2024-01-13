@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-    <html lang="es">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-         <title>Hendrik Hallel Rodriguez Plancarte - Biografia</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hendrik Hallel Rodriguez Plancarte - Biografia</title>
     <style>
         body {
             font-family: 'Roboto', sans-serif;
@@ -11,9 +11,11 @@
             padding: 0;
             background-color: #fafafa;
             color: #333;
+            overflow-x: hidden; /* Prevents horizontal scroll */
         }
         img {
             border-radius: 50%;
+            animation: appear 2s ease-in-out 1;
         }
         header {
             background-color: #2196F3;
@@ -26,6 +28,7 @@
         }
         h2, h3 {
             color: #2196F3;
+            animation: slide-in 2s ease-in-out 1;
         }
 
         section {
@@ -40,19 +43,42 @@
         p {
             margin: 10px 0;
             color: gray;
+            animation: slide-in 2s ease-in-out 1;
         }
 
         a {
             color: #2196F3;
             text-decoration: none;
+            animation: slide-in 2s ease-in-out 1;
         }
 
         a:hover {
             text-decoration: underline;
         }
+
+        /* Animation */
+        @keyframes slide-in {
+            0% {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            100% {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes appear {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
     </style>
 </head>
-  <body>
+<body>
     <h2>Educacion</h2>
         <h3>Kinder</h3>
         <p>Cambie varias veces, asi que no estoy seguro de los años exactos.</p>
@@ -68,5 +94,5 @@
         <div>
         <img src="../imagenes/3.jpg" alt="imagen1" height="200" width="200">
         </div>
-  </body>
+</body>
 </html>

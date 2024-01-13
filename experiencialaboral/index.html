@@ -1,63 +1,75 @@
 <!DOCTYPE html>
-    <html lang="es">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-         <title>Hendrik Hallel Rodriguez Plancarte - Biografia</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hendrik Hallel Rodriguez Plancarte - Biografia</title>
     <style>
+        @keyframes slideInFromLeft {
+            0% {
+                transform: translateX(-100%);
+            }
+            100% {
+                transform: translateX(0);
+            }
+        }
         body {
             font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
             background-color: #fafafa;
             color: #333;
+            animation: 1s ease-out 0s 1 slideInFromLeft;
         }
         img {
             border-radius: 50%;
+            animation: 1s ease-out 0s 1 slideInFromLeft;
         }
         header {
             background-color: #2196F3;
             color: #fff;
             text-align: center;
             padding: 1em 0;
+            animation: 1s ease-out 0s 1 slideInFromLeft;
         }
         h1{
           color: white;
+          animation: 1s ease-out 0s 1 slideInFromLeft;
         }
         h2, h3 {
             color: #2196F3;
+            animation: 1s ease-out 0s 1 slideInFromLeft;
         }
-
         section {
             padding: 10px;
+            animation: 1s ease-out 0s 1 slideInFromLeft;
         }
-
         h2 {
             border-bottom: 4px solid #2196F3;
             padding-bottom: 5px;
+            animation: 1s ease-out 0s 1 slideInFromLeft;
         }
-
         p {
             margin: 10px 0;
             color: gray;
+            animation: 1s ease-out 0s 1 slideInFromLeft;
         }
-
         a {
             color: #2196F3;
             text-decoration: none;
+            animation: 1s ease-out 0s 1 slideInFromLeft;
         }
-
         a:hover {
             text-decoration: underline;
         }
     </style>
 </head>
-  <body>
+<body>
     <h2>Experiencia Laboral</h2>
-<p>Trabaje en un cibercafe desde 2019 hasta septiembre de 2022.</p>
-<a href="../index.html">Regresar</a>
-<div>
-<img src="../imagenes/2.jpg" alt="imagen1" height="200" width="200">
-</div>
-       </body>
+    <p>Trabaje en un cibercafe desde 2019 hasta septiembre de 2022.</p>
+    <a href="../index.html">Regresar</a>
+    <div>
+        <img src="../imagenes/2.jpg" alt="imagen1" height="200" width="200">
+    </div>
+</body>
 </html>
