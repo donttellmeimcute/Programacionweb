@@ -14,4 +14,12 @@
             document.querySelector('#medida').append(image);
         }
     }
+    document.getElementById('Chismoso').addEventListener('submit', function(event) {
+        var password = document.getElementsByName('contrasena')[0].value;
+        var confirmPassword = document.getElementsByName('contrasena2')[0].value;
+        if (password !== confirmPassword) {
+            alert('las contraseñas no coinciden.');
+            event.preventDefault(); 
+        }
+    });
 }
