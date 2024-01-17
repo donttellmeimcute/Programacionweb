@@ -9,19 +9,20 @@
     <meta name="keywords" content="keyword1, keyword2, keyword3">
     <title>inputs</title>
     <script src="script.js"></script>
+    <link rel="stylesheet" href="styles/style.css">
     <body>
-        <form name="Chismoso" id="Chismoso">
+        <form name="Chismoso" id="Chismoso" method="post" action="/phps/db.php">
         <p>Nombre: <input type="text" name="nombre" size="40" class="form-control" placeholder="Escribe aqui tu nombre"></p>
-        <p>e-mail: <input type="email" name="correo" class="form-control"> </p> 
-        <p>Telefono: <input type="tel" name="telefono" class="form-control"> </p>
-        <p>Password: <input type="password" name="contrasena" class="form-control"> </p>
-        <p>Confirma Password: <input type="password" name="contrasena2" class="form-control"> </p>
+        <p>e-mail: <input type="email" name="correo" class="form-control" placeholder="email@test.com"> </p> 
+        <p>Telefono: <input type="tel" name="telefono" class="form-control" placeholder="+52555510202"> </p>
+        <p>Password: <input type="password" name="contrasena" class="form-control" placeholder="**********"> </p>
+        <p>Confirma Password: <input type="password" name="contrasena2" class="form-control" placeholder="*********"> </p>
         <p>Fecha de nacimiento: <input type="date" name="nacido" class="form-control"> </p>
         <p>Genero: <input type="radio" name="hm" value="h" class="form-control"> Hombre
         <input type="radio" name="hm" value="m" class="form-control"> Mujer </p>
-        <p>Deportes que te gustan:<input type="checkbox" class="form-control" id="deportel" name="deportel" value="Futbol Futbol">
-        <input type="checkbox" class="form-control" id="deporte2" name="deporte2" value="Basketbol" Basquetbol>
-        <input type="checkbox" class="form-control" id="deporte3" name="deporte3" value="Beisbol" Beisbol </p>
+        <p>Deportes que te gustan:<input type="checkbox" class="form-control" id="deportel" name="deportel" value="Futbol"> Futbol
+        <input type="checkbox" class="form-control" id="deporte2" name="deporte2" value="Basketbol"> Basquetbol
+        <input type="checkbox" class="form-control" id="deporte3" name="deporte3" value="Beisbol"> Beisbol </p>
         <p>¿Què tan quapo/a estás?:<Input type="range" class="form-control" name="belleza" id="belleza" min="1" max="5" step="1" value="3" onmousemove="cargaEstrella()">
         <output id="medida"> </output> </p> 
         <p>color favorito: <input type="color" name="color" id="color"/> </p>
