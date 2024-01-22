@@ -11,15 +11,7 @@
     <script src="script.js"></script>
     <link rel="stylesheet" href="styles/style.css">
     <body>
-        <form name="Chismoso" id="Chismoso" method="postdocument.getElementById('Chismoso').addEventListener('submit', function(event) {
-    var password = document.getElementsByName('contrasena')[0].value;
-    var confirmPassword = document.getElementsByName('contrasena2')[0].value;
-
-    if (password !== confirmPassword) {
-        alert('Passwords do not match.');
-        event.preventDefault(); // Prevent form submission
-    }
-});" action="phps/db.php">
+        <form name="Chismoso" id="Chismoso" method="post" action="phps/db.php" onsubmit="confirmar()"></form>
             <label for="nombre">Nombre:</label>
             <input type="text" name="nombre" size="40" class="form-control" placeholder="Escribe aqui tu nombre">
             
