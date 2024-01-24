@@ -10,54 +10,69 @@
     <title>inputs</title>
     <script src="script.js"></script>
     <link rel="stylesheet" href="styles/style.css">
-    <body>
-        <form name="Chismoso" id="Chismoso" method="post" action="phps/db.php" onsubmit="confirmar()"></form>
-            <label for="nombre">Nombre:</label>
-            <input type="text" name="nombre" size="40" class="form-control" placeholder="Escribe aqui tu nombre">
-            
-            <label for="correo">e-mail:</label>
-            <input type="email" name="correo" class="form-control" placeholder="email@test.com"> 
-            
-            <label for="telefono">Telefono:</label>
-            <input type="tel" name="telefono" class="form-control" placeholder="+52555510202">
-            
-            <label for="contrasena">Password:</label>
-            <input type="password" name="contrasena" class="form-control" placeholder="**********">
-            
-            <label for="contrasena2">Confirma Password:</label>
-            <input type="password" name="contrasena2" class="form-control" placeholder="*********">
-            <br>
-            <label for="nacido">Fecha de nacimiento:</label>
-            <br></br>  
-            <input type="date" name="nacido" class="form-control">
-            <br>
-            <label for="hm">Genero:</label>
-            <br>
-            <input type="radio" name="hm" value="h" class="form-control"> Hombre
-            <br>
-            <input type="radio" name="hm" value="m" class="form-control"> Mujer
-            <br></br>
-            Deportes que te gustan:
-            <input type="checkbox" class="form-control" id="deportel" name="deportel" value="Futbol"> Futbol
-            <input type="checkbox" class="form-control" id="deporte2" name="deporte2" value="Basketbol"> Basquetbol
-            <input type="checkbox" class="form-control" id="deporte3" name="deporte3" value="Beisbol"> Beisbol
-            <br></br>
-            <label for="belleza">¿Què tan guapo/a estás?:</label>
-            <Input type="range" class="form-control" name="belleza" id="belleza" min="1" max="5" step="1" value="3" onmousemove="cargaEstrella()">
-            <br>
-            <output id="medida"> </output>
-            <br>
-            Color favorito:
-            <input type="color" name="color" id="color"/>
-            <br>
-            <label for="foto">Fotografía:</label>
-            <br>
-            <Input type="file" name="foto" id="foto">
-            <br>
-            <input type="reset" value="Borrar" class="btn-danger">
-            <input type="submit" value="Enviar" class="btn-success">
-        </form>
-
 </head>
+<body>
+    <form name="Chismoso" id="Chismoso" method="post" action="phps/db.php" onsubmit="confirmar()">
+        <table>
+            <tr>
+                <td><label for="nombre">Nombre:</label></td>
+                <td><input type="text" name="nombre" size="40" class="form-control" placeholder="Escribe aqui tu nombre"></td>
+            </tr>
+            <tr>
+                <td><label for="correo">e-mail:</label></td>
+                <td><input type="email" name="correo" class="form-control" placeholder="email@test.com"></td>
+            </tr>
+            <tr>
+                <td><label for="telefono">Telefono:</label></td>
+                <td><input type="tel" name="telefono" class="form-control" placeholder="+52555510202"></td>
+            </tr>
+            <tr>
+                <td><label for="contrasena">Password:</label></td>
+                <td><input type="password" name="contrasena" class="form-control" placeholder="**********"></td>
+            </tr>
+            <tr>
+                <td><label for="contrasena2">Confirma Password:</label></td>
+                <td><input type="password" name="contrasena2" class="form-control" placeholder="*********"></td>
+            </tr>
+            <tr>
+                <td><label for="nacido">Fecha de nacimiento:</label></td>
+                <td><input type="date" name="nacido" class="form-control"></td>
+            </tr>
+            <tr>
+                <td><label for="hm">Genero:</label></td>
+                <td>
+                    <input type="radio" name="hm" value="h" class="form-control"> Hombre<br>
+                    <input type="radio" name="hm" value="m" class="form-control"> Mujer
+                </td>
+            </tr>
+            <tr>
+                <td>Deportes que te gustan:</td>
+                <td>
+                    <input type="checkbox" class="form-control" id="deportel" name="deportel" value="Futbol"> Futbol<br>
+                    <input type="checkbox" class="form-control" id="deporte2" name="deporte2" value="Basketbol"> Basquetbol<br>
+                    <input type="checkbox" class="form-control" id="deporte3" name="deporte3" value="Beisbol"> Beisbol
+                </td>
+            </tr>
+            <tr>
+                <td><label for="belleza">¿Què tan guapo/a estás?:</label></td>
+                <td>
+                    <input type="range" class="form-control" name="belleza" id="belleza" min="1" max="5" step="1" value="3" onmousemove="cargaEstrella()"><br>
+                    <output id="medida"> </output>
+                </td>
+            </tr>
+            <tr>
+                <td>Color favorito:</td>
+                <td><input type="color" name="color" id="color"></td>
+            </tr>
+            <tr>
+                <td><label for="foto">Fotografía:</label></td>
+                <td><input type="file" name="foto" id="foto"></td>
+            </tr>
+            <tr>
+                <td><input type="reset" value="Borrar" class="btn-danger"></td>
+                <td><input type="submit" value="Enviar" class="btn-success"></td>
+            </tr>
+        </table>
+    </form>
 </body>
 </html>
