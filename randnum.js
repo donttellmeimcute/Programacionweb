@@ -14,7 +14,6 @@ function generarNumeroAleatorio(semilla, iteraciones) {
   
       numerosAleatorios.push(numeroAleatorio);
     }
-  
     return numerosAleatorios;
   }
   var semillaInicial = 123; 
